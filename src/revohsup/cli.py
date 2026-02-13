@@ -105,6 +105,7 @@ def _message(
 
     Parameters
     ----------
+    token
 
     """
     send_message(

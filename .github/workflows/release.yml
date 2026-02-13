@@ -26,5 +26,5 @@ jobs:
       - name: Publish
         run: uv publish
   deploy-docs:
-    uses: ./.github/workflows/deploy-docs.yml
     needs: deploy-pypi
+    uses: ./.github/workflows/deploy-docs.yml
