@@ -1,17 +1,25 @@
 [project]
 name = "revohsup"
 version = "0.1.0"
-description = "Add your description here"
+description = "Yet another Python Pushover client"
 readme = "README.md"
 authors = [
-    { name = "Felix Jung", email = "felix.jung@tu-dresden.de" }
+    { name = "Felix Jung", email = "jung@posteo.de" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.32.5",
+    "typer>=0.23.0",
+]
 
 [project.scripts]
-revohsup = "revohsup:main"
+revohsup = "revohsup.cli:app"
 
 [build-system]
 requires = ["uv_build>=0.10.0,<0.11.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
