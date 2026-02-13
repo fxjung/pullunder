@@ -1,7 +1,9 @@
 import logging
+import typer
+
 from typing import Annotated
 
-import typer
+from .message import send_message
 
 log = logging.getLogger(__name__)
 
@@ -105,7 +107,24 @@ def _message(
     ----------
 
     """
-    print(message)
+    send_message(
+        message=message,
+        image_path=image_path,
+        title=title,
+        url=url,
+        url_title=url_title,
+        priority=priority,
+        timestamp=timestamp,
+        retry=retry,
+        expire=expire,
+        ttl=ttl,
+        sound=sound,
+        html=html,
+        markdown=markdown,
+        token=token,
+        user=user,
+        device=device,
+    )
 
 
 @app.callback(invoke_without_command=True)
