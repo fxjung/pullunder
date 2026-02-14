@@ -1,11 +1,11 @@
-Welcome to the revohsup documentation!
+Welcome to the pullunder documentation!
 =====================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: revohsup
+.. automodule:: pullunder
    :members:
    :undoc-members:
    :show-inheritance:

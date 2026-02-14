@@ -1,5 +1,5 @@
 [project]
-name = "revohsup"
+name = "pullunder"
 dynamic = ["version"]
 license = "MIT"
 description = "Yet another Python Pushover client"
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-revohsup = "revohsup.cli:app"
+pullunder = "pullunder.cli:app"
 
 [build-system]
 requires = ["setuptools>=64", "setuptools-scm>=8"]

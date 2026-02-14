@@ -131,4 +131,4 @@ def _message(
 @app.callback(invoke_without_command=True)
 def main(ctx: typer.Context):
     if ctx.invoked_subcommand is None:
-        print("Welcome to revohsup. Use --help for more information.")
+        print("Welcome to pullunder. Use --help for more information.")
